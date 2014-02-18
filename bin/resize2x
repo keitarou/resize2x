@@ -12,8 +12,10 @@ class Resize < Thor
   def resize
     outdir = options[:outdir]
 
-    Resize2x.get_2x_images(outdir).each do |image|
+    images = Resize2x.get_2x_images(outdir)
+    images.each_with_index do |image, index|
       image.resize_x2_to_half
+      print "(#{(index+1).to_s}/#{images.count.to_s}) resized: #{image.new_file_path},  #{image.image.columns}x#{image.image.rows} \n"
     end
   end
 end

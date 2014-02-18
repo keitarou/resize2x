@@ -12,7 +12,6 @@ class Resize2x
   def resize_x2_to_half
     self.image.scale!(0.5)
     self.image.write(self.new_file_path)
-    print "resized: #{self.new_file_path},  #{self.image.columns}x#{self.image.rows} \n"
   end
 
   def new_file_name
