@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/keitarou/resize2x"
   gem.license = "MIT"
   gem.summary = "iOS retina image resizer"
-  gem.description = "iOS retina image resizer"
+  gem.description = "iOS retina image resizer @2x files convert to half size image"
   gem.email = "keitarou.oonishi@gmail.com"
   gem.authors = ["keitarou.oonishi"]
   # dependencies defined in Gemfile

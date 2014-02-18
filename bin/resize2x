@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+#coding: utf-8
+
+require 'thor'
+require 'resize2x'
+
+class Resize < Thor
+  default_command :resize
+
+  desc 'resize', 'resize from @2x to half slace image'
+  option :outdir, :type => :string, :aliases => :'-o', :desc => "out dir", :default => './'
+  def resize
+    outdir = options[:outdir]
+
+    Resize2x.get_2x_images(outdir).each do |image|
+      image.resize_x2_to_half
+    end
+  end
+end
+
+Resize.start

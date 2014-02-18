@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "thor"
+gem "rmagick"
 
 group :development do
   gem "shoulda", ">= 0"
