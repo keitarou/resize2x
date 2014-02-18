@@ -28,7 +28,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/resize2x",
-    "lib/resize2x.rb"
+    "lib/resize2x.rb",
+    "resize2x.gemspec"
   ]
   s.homepage = "http://github.com/keitarou/resize2x"
   s.licenses = ["MIT"]
